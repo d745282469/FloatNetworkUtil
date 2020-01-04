@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    android:alpha="0.3">
+
+    <TextView
+        android:id="@+id/float_network_mod0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="信号强度："
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="@id/float_network_mod3"
+        app:layout_constraintTop_toBottomOf="@id/float_network_mod3"/>
+
+    <TextView
+        android:id="@+id/float_network_rssi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toRightOf="@id/float_network_mod0"
+        app:layout_constraintTop_toTopOf="@id/float_network_mod0"
+        android:text="正在获取..."/>
+
+    <TextView
+        android:id="@+id/float_network_mod1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="网络类型："
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/float_network_mod0"
+        app:layout_constraintLeft_toLeftOf="@id/float_network_mod0"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/float_network_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在获取..."
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toRightOf="@id/float_network_mod1"
+        app:layout_constraintTop_toTopOf="@id/float_network_mod1"/>
+
+    <TextView
+        android:id="@+id/float_network_mod2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加密方式："
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/float_network_mod1"
+        app:layout_constraintLeft_toLeftOf="@id/float_network_mod1"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/float_network_psd_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在获取..."
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toRightOf="@id/float_network_mod2"
+        app:layout_constraintTop_toTopOf="@id/float_network_mod2"/>
+
+    <TextView
+        android:id="@+id/float_network_mod3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WIFI名称："
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/float_network_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在获取..."
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toRightOf="@id/float_network_mod3"
+        app:layout_constraintTop_toTopOf="@id/float_network_mod3"/>
+
+    <TextView
+        android:id="@+id/float_network_mod4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="配网耗时："
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/float_network_mod2"
+        app:layout_constraintLeft_toLeftOf="@id/float_network_mod2"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/float_network_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="等待配网"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toRightOf="@id/float_network_mod4"
+        app:layout_constraintTop_toTopOf="@id/float_network_mod4"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
